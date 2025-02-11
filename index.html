@@ -13,6 +13,19 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'green-primary': '#179800'
+              }
+            }
+          }
+        }
+      </script>
+      <script src="https://kit.fontawesome.com/892517c9ca.js" crossorigin="anonymous"></script>
     <style>
         .font-sora{
             font-family: "Sora", serif;
@@ -20,10 +33,36 @@
     </style>
 </head>
 <body class="font-sora">
-    <header>
-        <button class="btn btn-error">HIII</button>
-        <h1 class="bg-slate-800 ">Asslamua alaikom</h1>
-
+    <header class="md:container mx-auto">
+        <!-- Navbar  -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <img class="" src="./c2-assets/logo-header.png" alt="">
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Product</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Contact us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end space-x-5">
+                    <i class="fa-solid fa-magnifying-glass hidden lg:flex"></i>
+                    <i class="fa-solid fa-cart-shopping hidden lg:flex"></i>
+                  <button class="btn border-green-primary hover:bg-green-primary text-xs hover:text-white hidden lg:flex"><a class="">Login</a></button>
+                  <button class="btn border-green-primary hover:bg-green-primary text-xs hover:text-white hidden lg:flex"><a>Register</a></button>
+                </div>
+                <div class="flex-none">
+                    <button class="text-5xl text-green-primary lg:hidden">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                  </div>
+            </div>
+            <!-- Horizontal line -->
+            <hr class="my-2 border-green-primary lg:hidden">
+        </nav>
+        
     </header>
 
     <main>
