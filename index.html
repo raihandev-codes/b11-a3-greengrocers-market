@@ -51,7 +51,7 @@
       }
     </style>
   </head>
-  <body class="font-sora space-y-20">
+  <body class="font-sora space-y-52">
     <header
       class="md:container mx-auto bg-gradient-to-b from-white to-[#EFEBE3]"
     >
@@ -113,7 +113,7 @@
       </div>
     </header>
 
-    <main>
+    <main class="md:container mx-auto mb-36">
       <!-- service section -->
       <section class="mx-auto p-4 lg:p-24">
         <h2 class="text-green-primary text-4xl mb-10 font-bold">
@@ -354,7 +354,7 @@
       </section>
 
       <!--choose us section  -->
-      <section class="mx-auto p-4 lg:p-4">
+      <section class="mx-auto p-4  lg:p-4">
         <h1 class="text-center text-5xl font-extrabold">Why Choose Us</h1>
         <p class="text-center lg:w-1/2 mx-auto mt-5">Contrary to popular belief, Our dedicated team works tirelessly to ensure quality, reliability, and exceptional service every day.</p>
 
@@ -430,11 +430,14 @@
             </div>
         </div>
         <!-- choose us section ends here -->
-    </section>
+      </section>
 
+    </main>
+
+    <div class="bg-[#179800] mt-20 relative">
       <!-- get grocery  news section -->
-      <section class="mx-auto p-4 lg:p-24">
-        <div class="bg-[#EFEBE3] p-2  rounded-xl lg:flex gap-6 lg:w-[1020px] mx-auto">
+      <div class="mx-auto absolute inset-x-0 -top-48 p-4 md:p-24">
+        <div class="bg-[#EFEBE3] p-2 rounded-xl lg:flex gap-6  lg:w-[1020px] mx-auto">
           <!-- Image Section -->
           <div class="w-[232px]  mx-auto lg:w-1/2  mb-4 ">
               <img src="./c2-assets/vegetable-busket.png" alt="" class="">
@@ -442,7 +445,7 @@
       
           <!-- Text and Form Section -->
           <div class=" space-y-4 text-center mt-4 p-8 lg:text-left">
-              <h2 class="text-2xl font-bold text-gray-800">Get Grocery News!</h2>
+              <h2 class="text-3xl font-bold text-[#179800] lg:text-gray-800">Get Grocery News!</h2>
               <p class="text-gray-600">Exclusive training tips, tricks, product deals, and more.</p>
       
               <div class="">
@@ -451,10 +454,34 @@
               <button class="bg-green-500 text-white px-6 py-2 rounded-md hover:bg-green-600 transition">Subscribe</button>
           </div>
         </div>
+      </div>
 
-      </section>
-    </main>
-
-    <footer></footer>
+      <footer class="bg-green-600 text-white  pt-20 lg:pt-28 h-350 md:150 p-2 px-6">
+        <div class="space-y-6  mt-10 lg:mt-52 lg:flex lg:items-baseline lg:justify-evenly">
+          <div class="mt-64 md:mt-10">
+            <img src="./c2-assets/logo-footer.png" alt="">
+            <p class="text-[#FFFFFF]">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+          </div>
+    
+          <div class="text-white">
+            <ul class="space-y-3">
+              <li><a href="">Product</a></li>
+              <li><a href="">Service</a></li>
+              <li><a href="">Contact us</a></li>
+            </ul>
+          </div>
+          
+          <div class="text-white">
+            <h3 class="font-semibold">Follow us</h3>
+            <ul class="flex gap-6">
+              <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </footer> 
+    </div>
   </body>
 </html>
